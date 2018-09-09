@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <RootHeader></RootHeader>
+    <div class="container">
+      <header class="page-header row">
+        <h2>Olá!</h2>
+      </header>
+    </div>
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
+import RootHeader from './components/root/header.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { RootHeader }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/sass/app.scss" lang="sass"></style>
