@@ -1,6 +1,4 @@
-// import Main from '@/Main'
-import { routes as dashboard } from '@/modules/dashboard'
-import { routes as auth } from '@/modules/auth'
+import {routes as app} from '../app'
 
 const root = [
   { path: '/', redirect: '/dashboard' }
@@ -8,6 +6,5 @@ const root = [
 
 export default [
   ...root,
-  ...dashboard,
-  ...auth
+  ...app
 ]
