@@ -12,7 +12,9 @@ export default {
   },
   methods: {
     doLogin () {
-      this.$router.push('/')
+      const user = this.user
+      this.$store.dispatch('attemptLogin', {...user})
+      // this.$router.push('/')
     }
   },
   computed: {
