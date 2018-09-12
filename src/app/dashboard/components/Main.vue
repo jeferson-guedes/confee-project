@@ -4,15 +4,15 @@
   </header>
 </template>
 <script>
-import http from '../../../http'
+//   http from '../../../http'
 
 export default {
-  mounted () {
-    http.get('http://pokeapi.co/api/v2/pokemon/1')
-      .then(response => response.data)
-      .then(data => {
-        console.log(data)
-      })
-  }
+  // mounted () {
+  //   http.get('http://pokeapi.co/api/v2/pokemon/1')
+  //     .then(response => response.data)
+  //     .then(data => {
+  //       console.log(data)
+  //     })
+  // }
 }
 </script>
