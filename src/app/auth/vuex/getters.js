@@ -1,3 +1,4 @@
 import { isEmpty } from 'lodash'
 
-export const isLogger = ({ token }) => !isEmpty(token)
+export const isLogged = ({ token }) => !isEmpty(token)
+export const currentUser = ({ user }) => user
