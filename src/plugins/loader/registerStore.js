@@ -1,9 +1,7 @@
+import module from './vuex'
+
 const registerStore = store => {
-  store.registerModule('LOADER', {
-    state: {
-      show: false
-    }
-  })
+  store.registerModule('LOADER', { ...module })
 }
 
 export default registerStore

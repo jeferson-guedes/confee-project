@@ -6,7 +6,7 @@ import router from './router'
 import store from './vuex'
 import Loader from './plugins/loader'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
 Vue.use(Loader, store)
 
@@ -16,8 +16,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>',
-  mounted () {
-    this.$loader.show()
-  }
+  template: '<App/>'
 })

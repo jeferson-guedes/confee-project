@@ -14,10 +14,12 @@ export default {
   methods: {
     ...mapActions(['attemptLogin']),
     doLogin () {
+      this.$loader.show()
       const user = this.user
       this.attemptLogin({...user})
         .then(() => {
           this.$router.push('/')
+          this.$loader.hide()
         })
     }
   },

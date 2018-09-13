@@ -1,10 +1,10 @@
 const loaderFactory = context => {
   return {
     show () {
-      console.log({show: context})
+      context.$store.dispatch('showLoader')
     },
     hide () {
-      console.log({hide: context})
+      context.$store.dispatch('hideLoader')
     }
 
   }
