@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './vuex'
+import Loader from './plugins/loader'
 
 Vue.config.productionTip = false
+
+Vue.use(Loader, store)
 
 /* eslint-disable no-new */
 new Vue({
@@ -13,5 +16,8 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  mounted () {
+    this.$loader.show()
+  }
 })
